@@ -19,19 +19,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Theme style -->
     <link rel="stylesheet" href="../VAT_FrontEnd/Content/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-        page. However, you can choose any other skin. Make sure you
-        apply the skin class to the body tag so the changes take effect. -->
+page. However, you can choose any other skin. Make sure you
+apply the skin class to the body tag so the changes take effect. -->
     <link rel="stylesheet" href="../VAT_FrontEnd/Content/css/skins/skin-blue.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-  <script src="../VAT_FrontEnd/Content/js/ie9/html5shiv.min.js"></script>
-  <script src="../VAT_FrontEnd/Content/js/ie9/respond.min.js"></script>
-  <![endif]-->
+<script src="../VAT_FrontEnd/Content/js/ie9/html5shiv.min.js"></script>
+<script src="../VAT_FrontEnd/Content/js/ie9/respond.min.js"></script>
+<![endif]-->
 
     <!-- Google Font -->
     <link rel="stylesheet" href="../VAT_FrontEnd/Content/css/fonts_googleapis.css">
+    <!-- Rodrigo Styles -->
+    <link rel="stylesheet" href="../VAT_FrontEnd/Content/css/styles.css">
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -39,268 +41,207 @@ BODY TAG OPTIONS:
 Apply one or more of the following classes to get the
 desired effect
 |---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
+| SKINS | skin-blue |
+| | skin-black|
+| | skin-purple |
+| | skin-yellow |
+| | skin-red|
+| | skin-green|
 |---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
+|LAYOUT OPTIONS | fixed |
+| | layout-boxed|
+| | layout-top-nav|
+| | sidebar-collapse|
+| | sidebar-mini|
 |---------------------------------------------------------|
 -->
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-collapse layout-boxed">
     <div class="wrapper">
 
         <!-- Main Header -->
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="index2.html" class="logo">
+            <a href="www.cert.ae" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>A</b>LT</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b>LTE</span>
+                <span class="logo-lg"><b>CERT</b>LOGO</span>
             </a>
 
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
-                <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <span class="sr-only">Toggle navigation</span>
-                </a>
-                <!-- Navbar Right Menu -->
-                <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-                        <!-- Messages: style can be found in dropdown.less-->
-                        <li class="dropdown messages-menu">
-                            <!-- Menu toggle button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="label label-success">4</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 4 messages</li>
-                                <li>
-                                    <!-- inner menu: contains the messages -->
-                                    <ul class="menu">
-                                        <li>
-                                            <!-- start message -->
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <!-- User Image -->
-                                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <!-- Message title and timestamp -->
-                                                <h4>
-                                                    Support Team
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                </h4>
-                                                <!-- The message -->
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <!-- end message -->
-                                    </ul>
-                                    <!-- /.menu -->
-                                </li>
-                                <li class="footer"><a href="#">See All Messages</a></li>
-                            </ul>
-                        </li>
-                        <!-- /.messages-menu -->
-
-                        <!-- Notifications Menu -->
-                        <li class="dropdown notifications-menu">
-                            <!-- Menu toggle button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-bell-o"></i>
-                                <span class="label label-warning">10</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 10 notifications</li>
-                                <li>
-                                    <!-- Inner Menu: contains the notifications -->
-                                    <ul class="menu">
-                                        <li>
-                                            <!-- start notification -->
-                                            <a href="#">
-                                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                            </a>
-                                        </li>
-                                        <!-- end notification -->
-                                    </ul>
-                                </li>
-                                <li class="footer"><a href="#">View all</a></li>
-                            </ul>
-                        </li>
-                        <!-- Tasks Menu -->
-                        <li class="dropdown tasks-menu">
-                            <!-- Menu Toggle Button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-flag-o"></i>
-                                <span class="label label-danger">9</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 9 tasks</li>
-                                <li>
-                                    <!-- Inner menu: contains the tasks -->
-                                    <ul class="menu">
-                                        <li>
-                                            <!-- Task item -->
-                                            <a href="#">
-                                                <!-- Task title and progress text -->
-                                                <h3>
-                                                    Design some buttons
-                                                    <small class="pull-right">20%</small>
-                                                </h3>
-                                                <!-- The progress bar -->
-                                                <div class="progress xs">
-                                                    <!-- Change the css width attribute to simulate progress -->
-                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">20% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <!-- end task item -->
-                                    </ul>
-                                </li>
-                                <li class="footer">
-                                    <a href="#">View all tasks</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- User Account Menu -->
-                        <li class="dropdown user user-menu">
-                            <!-- Menu Toggle Button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <!-- The user image in the navbar-->
-                                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">Alexander Pierce</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- The user image in the menu -->
-                                <li class="user-header">
-                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
-                                    <p>
-                                        Alexander Pierce - Web Developer
-                                        <small>Member since Nov. 2012</small>
-                                    </p>
-                                </li>
-                                <!-- Menu Body -->
-                                <li class="user-body">
-                                    <div class="row">
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Followers</a>
-                                        </div>
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Sales</a>
-                                        </div>
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Friends</a>
-                                        </div>
-                                    </div>
-                                    <!-- /.row -->
-                                </li>
-                                <!-- Menu Footer-->
-                                <li class="user-footer">
-                                    <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Control Sidebar Toggle Button -->
-                        <li>
-                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
         </header>
-        <!-- Left side column. contains the logo and sidebar -->
-        <aside class="main-sidebar">
-
-            <!-- sidebar: style can be found in sidebar.less -->
-            <section class="sidebar">
-
-                <!-- Sidebar user panel (optional) -->
-                <div class="user-panel">
-                    <div class="pull-left image">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                    </div>
-                    <div class="pull-left info">
-                        <p>Alexander Pierce</p>
-                        <!-- Status -->
-                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-                    </div>
-                </div>
-
-                <!-- search form (Optional) -->
-                <form action="#" method="get" class="sidebar-form">
-                    <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-                    </div>
-                </form>
-                <!-- /.search form -->
-
-                <!-- Sidebar Menu -->
-                <ul class="sidebar-menu" data-widget="tree">
-                    <li class="header">HEADER</li>
-                    <!-- Optionally, you can add icons to the links -->
-                    <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-                    <li class="treeview">
-                        <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#">Link in level 2</a></li>
-                            <li><a href="#">Link in level 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- /.sidebar-menu -->
-            </section>
-            <!-- /.sidebar -->
-        </aside>
-
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Page Header
-                    <small>Optional description</small>
+                    VAT Program
+                    <small>N: VAT1234</small>
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                    <li class="active">Here</li>
-                </ol>
             </section>
 
             <!-- Main content -->
             <section class="content container-fluid">
 
-                <!--------------------------
-        | Your Page Content Here |
-        -------------------------->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="jumbotron">
+                                <h2>
+                                    Hello, world!
+                                </h2>
+                                <p>
+                                    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal" enctype="multipart/form-data">
+                                <fieldset>
+
+                                    <!-- Form Name -->
+                                    <legend>Form Name</legend>
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="singlebutton-0">Single Button</label>
+                                        <div class="controls">
+                                            <button id="singlebutton-0" name="singlebutton-0" class="btn btn-primary">Button</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- File Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="filebutton-0">File Button</label>
+                                        <div class="controls">
+                                            <input id="filebutton-0" name="filebutton-0" class="input-file" type="file">
+                                        </div>
+                                    </div>
+
+                                    <!-- Select Basic -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="selectbasic-0">Select Basic</label>
+                                        <div class="controls">
+                                            <select id="selectbasic-0" name="selectbasic-0" class="input-xlarge">
+                                                <option>Option one</option>
+                                                <option>Option two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="textinput-0">Text Input</label>
+                                        <div class="controls">
+                                            <input id="textinput-0" name="textinput-0" type="text" placeholder="placeholder" class="input-xlarge">
+                                            <p class="help-block">help</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Multiple Radios -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="multipleradios-0">Multiple Radios</label>
+                                        <div class="controls">
+                                            <label class="radio" for="multipleradios-0-0">
+<input type="radio" name="multipleradios-0" id="multipleradios-0-0" value="Option one" checked="checked">
+Option one
+</label>
+                                            <label class="radio" for="multipleradios-0-1">
+<input type="radio" name="multipleradios-0" id="multipleradios-0-1" value="Option two">
+Option two
+</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Multiple Checkboxes (inline) -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="">Inline Checkboxes</label>
+                                        <div class="controls">
+                                            <label class="checkbox inline" for="multiplecheckboxesinline-0-0">
+<input type="checkbox" name="multiplecheckboxesinline-0" id="multiplecheckboxesinline-0-0" value="1">
+1
+</label>
+                                            <label class="checkbox inline" for="multiplecheckboxesinline-0-1">
+<input type="checkbox" name="multiplecheckboxesinline-0" id="multiplecheckboxesinline-0-1" value="2">
+2
+</label>
+                                            <label class="checkbox inline" for="multiplecheckboxesinline-0-2">
+<input type="checkbox" name="multiplecheckboxesinline-0" id="multiplecheckboxesinline-0-2" value="3">
+3
+</label>
+                                            <label class="checkbox inline" for="multiplecheckboxesinline-0-3">
+<input type="checkbox" name="multiplecheckboxesinline-0" id="multiplecheckboxesinline-0-3" value="4">
+4
+</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Appended Input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="appendedtext-0">Appended Text</label>
+                                        <div class="controls">
+                                            <div class="input-append">
+                                                <input id="appendedtext-0" name="appendedtext-0" class="input-xlarge" placeholder="placeholder" type="text">
+                                                <span class="add-on">append</span>
+                                            </div>
+                                            <p class="help-block">help</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Prepended checkbox -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="prependedcheckbox-0">Prepended Checkbox</label>
+                                        <div class="controls">
+                                            <div class="input-prepend">
+                                                <span class="add-on">
+<label class="checkbox">
+<input type="checkbox">
+</label>
+</span>
+                                                <input id="prependedcheckbox-0" name="prependedcheckbox-0" class="input-xlarge" type="text" placeholder="placeholder">
+                                            </div>
+                                            <p class="help-block">help</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Multiple Radios (inline) -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="">Inline Radios</label>
+                                        <div class="controls">
+                                            <label class="radio inline" for="multipleradiosinline-0-0">
+<input type="radio" name="multipleradiosinline-0" id="multipleradiosinline-0-0" value="1" checked="checked">
+1
+</label>
+                                            <label class="radio inline" for="multipleradiosinline-0-1">
+<input type="radio" name="multipleradiosinline-0" id="multipleradiosinline-0-1" value="2">
+2
+</label>
+                                            <label class="radio inline" for="multipleradiosinline-0-2">
+<input type="radio" name="multipleradiosinline-0" id="multipleradiosinline-0-2" value="3">
+3
+</label>
+                                            <label class="radio inline" for="multipleradiosinline-0-3">
+<input type="radio" name="multipleradiosinline-0" id="multipleradiosinline-0-3" value="4">
+4
+</label>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
 
             </section>
             <!-- /.content -->
@@ -351,7 +292,7 @@ desired effect
                                 <h4 class="control-sidebar-subheading">
                                     Custom Template Design
                                     <span class="pull-right-container">
-                    <span class="label label-danger pull-right">70%</span>
+<span class="label label-danger pull-right">70%</span>
                                     </span>
                                 </h4>
 
@@ -375,9 +316,9 @@ desired effect
 
                         <div class="form-group">
                             <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
+Report panel usage
+<input type="checkbox" class="pull-right" checked>
+</label>
 
                             <p>
                                 Some information about this general settings option
@@ -391,7 +332,7 @@ desired effect
         </aside>
         <!-- /.control-sidebar -->
         <!-- Add the sidebar's background. This div must be placed
-  immediately after the control sidebar -->
+immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
     </div>
     <!-- ./wrapper -->
@@ -406,8 +347,9 @@ desired effect
     <script src="../VAT_FrontEnd/Content/js/adminlte.min.js"></script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. -->
+ Both of these plugins are recommended to enhance the
+ user experience. -->
+
 </body>
 
 </html>
