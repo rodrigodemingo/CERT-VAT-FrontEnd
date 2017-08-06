@@ -58,3 +58,8 @@ header>a.logo>img.img-responsive {
 .table>thead>tr>th {
     vertical-align: middle;
 }
+
+.widget-user .widget-user-header {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
