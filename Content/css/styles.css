@@ -39,7 +39,7 @@ header>a.logo>img.img-responsive {
 }
 
 .widget-user .box-footer {
-    padding-bottom: 30px;
+    padding: 2.43rem 2.4rem;
 }
 
 .quick-links {
@@ -62,4 +62,8 @@ header>a.logo>img.img-responsive {
 .widget-user .widget-user-header {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+}
+
+.navbar-custom-menu .navbar-nav>li>a {
+    padding-top: 26px;
 }
