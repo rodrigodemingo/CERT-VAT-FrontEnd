@@ -10,25 +10,25 @@
 
 
 /* HEADER */
-
-.main-header .logo {
-    height: 5rem;
+h1 {
+    color: #357ca5;
 }
-
-
-/* Header */
-
-.content-header {
-    padding: 0;
-    margin: 15px;
-}
-
 
 /* Logo Header */
 
-header>a.logo>img.img-responsive {
-    max-width: 11rem;
+.main-header {
+    max-height: 107px;
+}
+
+.main-header .logo {
+    height: 10rem;
     margin: 0.2rem auto;
+}
+
+@media (max-width:767px) {
+    .main-header .logo {
+        width: 27rem;
+    }
 }
 
 
