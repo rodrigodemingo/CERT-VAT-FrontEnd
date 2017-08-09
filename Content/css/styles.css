@@ -89,6 +89,10 @@ h1 {
 
 /* Leaflet Map */
 
+.leaflet-container a.leaflet-popup-close-button {
+    display: none;
+}
+
 #mapid {
     height: 196px;
 }
