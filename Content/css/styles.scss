@@ -2,24 +2,16 @@
 
 // Named Color Variables
 // --------------------------------------------------
-
-$colors: ( 
-  primary:           #28B5F4, 
-  primary-dark:      #0085C1, 
-  primary-light:     #72E7FF,
-  secondary:         #0277BD, // accent color
-  secondary-dark:    #004C8C, 
-  secondary-light:   #58A5F0, 
-  text-primary:      #48484A, 
-  text-secondary:    #8C8E90, 
-  disable:           #ABADB0, 
-  divider:           #BDBDBD,
-  danger:            #f53d3d,
-  light:             #fff,
-  dark:              #222
-  );
+$colors: ( primary: #3c8dbc, primary-dark: #357ca5, primary-light: #81b5d4, secondary: #d81b60, // accent color
+secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-secondary: #8C8E90, disable: #ABADB0, divider: #BDBDBD, light: #fff, dark: #222);
 
 /***** GLOBAL STYLES *****/
+
+// Countdown clock	http://flipclockjs.com/
+.countdown {
+    position: relative;
+    bottom: 7rem;
+}
 
 .text-light {
     color: map-get($colors, light);

@@ -1,5 +1,10 @@
 /* CSS Added by Rodrigo de Mingo */
 /***** GLOBAL STYLES *****/
+.countdown {
+  position: relative;
+  bottom: 7rem;
+}
+
 .text-light {
   color: #fff;
 }
