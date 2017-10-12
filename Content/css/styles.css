@@ -5,6 +5,20 @@
   color: #fff;
 }
 
+.bg-primary-dark {
+  background: #357ca5;
+  color: #fff;
+}
+
+.bg-secondary {
+  background: #8E292E;
+  color: #fff;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+  color: #fff;
+}
+
 /***** GLOBAL STYLES *****/
 body {
   font-size: 16px;

@@ -9,7 +9,17 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
   background: map-get($colors, primary);
   color: #fff;
 }
-
+.bg-primary-dark {
+  background: map-get($colors, primary-dark);
+  color: #fff;
+}
+.bg-secondary {
+  background: map-get($colors, secondary);
+  color: #fff;
+}
+.btn.focus, .btn:focus, .btn:hover {
+  color: #fff;
+}
 
 /***** GLOBAL STYLES *****/
 
