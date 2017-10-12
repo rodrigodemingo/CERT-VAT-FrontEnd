@@ -1,4 +1,8 @@
 /* CSS Added by Rodrigo de Mingo */
+.bg-secondary {
+  background: #d81b60;
+}
+
 /***** GLOBAL STYLES *****/
 .countdown {
   position: relative;
@@ -18,6 +22,14 @@
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.row-flex {
+  display: flex !important;
+}
+
+.col-flex {
+  flex: 1 !important;
 }
 
 /* MARGINS & PADDINGS */
@@ -365,49 +377,50 @@
   margin-bottom: -40px;
 }
 
-/***** HOME PAGE *****/
-.navbar-custom-menu {
+/***** EXECUTIVE WORKSHOP *****/
+#executive_workshop .navbar-custom-menu {
   top: 2.7rem;
   position: relative;
 }
 
-.main-header {
+#executive_workshop .main-header {
   max-height: 107px;
 }
 
-.main-header .logo {
+#executive_workshop .main-header .logo {
   height: 10rem;
   margin: 1rem auto;
 }
 
-.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+#executive_workshop .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
   color: #48484A;
 }
 
-.widget-user .box-footer {
+#executive_workshop .widget-user .box-footer {
   padding: 2.43rem 2.4rem;
 }
 
-.quick-links {
+#executive_workshop .quick-links {
   margin: 30px;
 }
 
-.program-information h4 {
+#executive_workshop .program-information h4 {
   font-weight: 600;
 }
 
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > th {
+#executive_workshop .table > tbody > tr > td,
+#executive_workshop .table > tbody > tr > th,
+#executive_workshop .table > tfoot > tr > td,
+#executive_workshop .table > tfoot > tr > th,
+#executive_workshop .table > thead > tr > td,
+#executive_workshop .table > thead > tr > th {
   vertical-align: middle;
 }
 
-.widget-user .widget-user-header {
+#executive_workshop .widget-user .widget-user-header {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  height: 39rem;
 }
 
 /* LOGIN PAGE */
@@ -583,11 +596,6 @@ span.round-tab:hover {
     height: 50px;
     line-height: 50px;
   }
-  /* .wizard li.active:after {
-        content: " ";
-        position: absolute;
-        left: 35%;
-    } */
 }
 
 @media (max-width: 767px) {
@@ -597,5 +605,11 @@ span.round-tab:hover {
   .box .border-right {
     border-right: none;
     border-bottom: 1px solid #f4f4f4;
+  }
+}
+
+@media (max-width: 992px) {
+  #executive_workshop .widget-user .widget-user-header {
+    height: 20rem;
   }
 }
