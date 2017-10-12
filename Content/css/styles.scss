@@ -10,18 +10,22 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
   color: #fff;
 }
 
-.bg-secondary,
-.btn-secondary {
-  background: map-get($colors, secondary);
-}
-
-.btn-secondary {
-  border: 1px solid #fff;
-  color: #fff;
-}
-
 
 /***** GLOBAL STYLES *****/
+
+body {
+  font-size: 16px;
+}
+
+.border-right {
+  border-right: 1px solid;
+  border-color: map-get($colors, divider);
+}
+
+.program-information h5 {
+  color: map-get($colors, text-highlight);
+  font-size: 1.6rem;
+}
 
 // Countdown clock	http://flipclockjs.com/
 .countdown {
@@ -429,7 +433,6 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
   // }
   .program-information h4 {
     font-weight: 600;
-    margin-top: 4rem;
   }
   .table>tbody>tr>td,
   .table>tbody>tr>th,
@@ -461,9 +464,15 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
   .description-block>.description-text {
     font-size: 1.3rem;
   }
-  a:hover,
-  a:active,
-  a:focus {
+  .box-footer.bg-secondary,
+  .box-footer .btn-secondary {
+    background: map-get($colors, secondary);
+  }
+  .box-footer .btn-secondary {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .box > .box-footer > .description-block a.btn-secondary:hover {
     color: map-get($colors, secondary);
     background: map-get($colors, light);
   }

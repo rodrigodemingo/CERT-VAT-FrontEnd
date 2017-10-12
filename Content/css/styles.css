@@ -5,17 +5,21 @@
   color: #fff;
 }
 
-.bg-secondary,
-.btn-secondary {
-  background: #8E292E;
-}
-
-.btn-secondary {
-  border: 1px solid #fff;
-  color: #fff;
-}
-
 /***** GLOBAL STYLES *****/
+body {
+  font-size: 16px;
+}
+
+.border-right {
+  border-right: 1px solid;
+  border-color: #EBEBEB;
+}
+
+.program-information h5 {
+  color: #B89207;
+  font-size: 1.6rem;
+}
+
 .countdown {
   position: relative;
   bottom: 7rem;
@@ -418,7 +422,6 @@
 
 #executive_workshop .program-information h4 {
   font-weight: 600;
-  margin-top: 4rem;
 }
 
 #executive_workshop .table > tbody > tr > td,
@@ -458,9 +461,17 @@
   font-size: 1.3rem;
 }
 
-#executive_workshop a:hover,
-#executive_workshop a:active,
-#executive_workshop a:focus {
+#executive_workshop .box-footer.bg-secondary,
+#executive_workshop .box-footer .btn-secondary {
+  background: #8E292E;
+}
+
+#executive_workshop .box-footer .btn-secondary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+#executive_workshop .box > .box-footer > .description-block a.btn-secondary:hover {
   color: #8E292E;
   background: #fff;
 }
