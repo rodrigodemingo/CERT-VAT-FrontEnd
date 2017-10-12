@@ -378,18 +378,14 @@
 }
 
 /***** EXECUTIVE WORKSHOP *****/
-#executive_workshop .navbar-custom-menu {
-  top: 2.7rem;
-  position: relative;
-}
-
 #executive_workshop .main-header {
-  max-height: 107px;
+  max-height: 130px;
 }
 
 #executive_workshop .main-header .logo {
-  height: 10rem;
-  margin: 1rem auto;
+  height: 80px;
+  width: 300px;
+  margin-top: 20px;
 }
 
 #executive_workshop .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
@@ -398,10 +394,6 @@
 
 #executive_workshop .widget-user .box-footer {
   padding: 2.43rem 2.4rem;
-}
-
-#executive_workshop .quick-links {
-  margin: 30px;
 }
 
 #executive_workshop .program-information h4 {
@@ -599,12 +591,12 @@ span.round-tab:hover {
 }
 
 @media (max-width: 767px) {
-  .main-header .logo {
-    width: 27rem;
-  }
   .box .border-right {
     border-right: none;
     border-bottom: 1px solid #f4f4f4;
+  }
+  .main-header .logo {
+    width: 30%;
   }
 }
 
