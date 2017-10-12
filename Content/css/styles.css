@@ -1,6 +1,18 @@
 /* CSS Added by Rodrigo de Mingo */
-.bg-secondary {
-  background: #d81b60;
+.bg-primary,
+.btn-primary {
+  background: #233140;
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background: #8E292E;
+}
+
+.btn-secondary {
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 /***** GLOBAL STYLES *****/
@@ -14,9 +26,13 @@
 }
 
 .layout-boxed,
-.content-wrapper,
-.main-footer {
+.content-wrapper {
   background: #fff;
+  margin-left: 0;
+}
+
+.main-footer {
+  background: #EBEBEB;
   margin-left: 0;
 }
 
@@ -33,6 +49,10 @@
 }
 
 /* MARGINS & PADDINGS */
+.p-0 {
+  padding: 0;
+}
+
 .p-xxs {
   padding: 5px;
 }
@@ -384,8 +404,8 @@
 
 #executive_workshop .main-header .logo {
   height: 80px;
-  width: 300px;
-  margin-top: 20px;
+  width: 350px;
+  margin: 2rem 0 1rem;
 }
 
 #executive_workshop .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
@@ -398,6 +418,7 @@
 
 #executive_workshop .program-information h4 {
   font-weight: 600;
+  margin-top: 4rem;
 }
 
 #executive_workshop .table > tbody > tr > td,
@@ -412,7 +433,36 @@
 #executive_workshop .widget-user .widget-user-header {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  height: 39rem;
+  height: 35rem;
+}
+
+#executive_workshop .widget-user .widget-user-username {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#executive_workshop .widget-user .widget-user-desc {
+  font-size: 16px;
+}
+
+#executive_workshop .description-block {
+  height: 4rem;
+}
+
+#executive_workshop .description-block > .description-header {
+  font-size: 2.1rem;
+}
+
+#executive_workshop .description-block > .description-text {
+  font-size: 1.3rem;
+}
+
+#executive_workshop a:hover,
+#executive_workshop a:active,
+#executive_workshop a:focus {
+  color: #8E292E;
+  background: #fff;
 }
 
 /* LOGIN PAGE */
@@ -595,13 +645,13 @@ span.round-tab:hover {
     border-right: none;
     border-bottom: 1px solid #f4f4f4;
   }
-  .main-header .logo {
-    width: 30%;
-  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #executive_workshop .widget-user .widget-user-header {
     height: 20rem;
+  }
+  .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+    top: 50%;
   }
 }
