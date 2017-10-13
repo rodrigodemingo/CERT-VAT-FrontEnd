@@ -50,6 +50,11 @@ h6,
   display: none;
 }
 
+p {
+  line-height: 25px;
+  text-align: justify;
+}
+
 
 /***** LOGO HEADER *****/
 
@@ -694,6 +699,7 @@ span.round-tab:hover {
   h3 {
     color: map-get($colors, text-highlight);
     text-align: center;
+    margin: 50px 0;
   }
 }
 

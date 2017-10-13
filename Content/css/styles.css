@@ -43,6 +43,11 @@ h6,
   display: none;
 }
 
+p {
+  line-height: 25px;
+  text-align: justify;
+}
+
 /***** LOGO HEADER *****/
 .main-header {
   max-height: 130px;
@@ -672,6 +677,7 @@ span.round-tab:hover {
 #home_page h3 {
   color: #B89207;
   text-align: center;
+  margin: 50px 0;
 }
 
 /***** MEDIA QUERIES *****/
