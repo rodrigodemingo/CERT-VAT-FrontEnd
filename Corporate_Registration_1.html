@@ -8,13 +8,81 @@
 <body id="corporate_registration_1" class="hold-transition skin-blue sidebar-collapse layout-boxed">
     <div class="wrapper">
         <!-- Main Header -->
-        <header class="main-header">
+        <header class="main-header row-flex">
             <!-- Logo -->
-            <a href="/index.html" class="logo">
-                <img src="/Content/img/logos/CERTfuture.svg" alt="CERT logo">
+            <a href="../../index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">
+                    <img src="/Content/img/logos/certLogoSVG.svg" alt="CERT logo">
+                </span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">
+                    <img src="/Content/img/logos/certLogoSVG.svg" alt="CERT logo">
+                </span>
             </a>
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top col-flex" role="navigation">
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>Register</span>
+                            </a>
+                            <ul class="dropdown-menu vivify popIn">
+                                <!-- The user image in the menu -->
+                                <li class="user-header">
+                                    <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        Register to VAT
+                                        <small>Please select your Registration option</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <a class="btn bg-primary-dark btn-flat" href="/registration.html" role="button">Individual</a>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <a class="btn bg-secondary btn-flate" href="/registration.html" role="button">Corporate</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                <span>Login</span>
+                            </a>
+                            <ul class="dropdown-menu vivify popIn">
+                                <!-- The user image in the menu -->
+                                <li class="user-header">
+                                    <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        Welcome to VAT
+                                        <small>Please select your option</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <a class="btn btn-flat bg-primary-dark" href="/login.html" role="button">Login</a>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <a class="btn bg-secondary btn-flate" href="/index.html" role="button">Sign out</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!-- Content Wrapper. Contains page content -->
@@ -98,7 +166,8 @@
                         <label>Disclaimer</label>
                         <div class="callout callout-info">
                             <div class="checkbox">
-                                <label><input type="checkbox">I agree to the Terms and Conditions</label>
+                                <label>
+                                    <input type="checkbox">I agree to the Terms and Conditions</label>
                                 <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#modal-default">README</button>
                             </div>
                         </div>
@@ -108,7 +177,8 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                         <h4 class="modal-title">Terms and Conditions</h4>
                                     </div>
                                     <div class="modal-body">
@@ -117,7 +187,8 @@
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="fa-avatar-circle text-center bg-aqua">
-                                                    <i class="fa fa-gavel fa-4x fa-inverse"></i></span>
+                                                    <i class="fa fa-gavel fa-4x fa-inverse"></i>
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
@@ -125,11 +196,9 @@
                                         </div>
                                         <div class="form-group">
                                             <textarea class="form-control" rows="6">
-Terms and Conditions:
-In addition to the general terms and conditions below please also refer to the course specific terms and conditions available in the relevant areas of our website.
-1. Payment terms
-2. Cancellations
-3. Deferrals and course changes
+                                                Terms and Conditions: In addition to the general terms and conditions below please also refer to the course specific terms
+                                                and conditions available in the relevant areas of our website. 1. Payment
+                                                terms 2. Cancellations 3. Deferrals and course changes
                                             </textarea>
                                         </div>
                                     </div>

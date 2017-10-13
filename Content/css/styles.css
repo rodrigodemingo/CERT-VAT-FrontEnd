@@ -38,6 +38,21 @@ h6,
   font-family: 'Muli', sans-serif;
 }
 
+/***** LOGO HEADER *****/
+.main-header {
+  max-height: 130px;
+}
+
+.main-header .logo {
+  height: 80px;
+  width: 350px;
+  margin: 2rem 0 1rem;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+  color: #000;
+}
+
 .border-right {
   border-right: 1px solid;
   border-color: #EBEBEB;
@@ -430,16 +445,6 @@ h6,
 }
 
 /***** EXECUTIVE WORKSHOP *****/
-#executive_workshop .main-header {
-  max-height: 130px;
-}
-
-#executive_workshop .main-header .logo {
-  height: 80px;
-  width: 350px;
-  margin: 2rem 0 1rem;
-}
-
 #executive_workshop .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
   color: #48484A;
 }
@@ -658,7 +663,12 @@ span.round-tab:hover {
   margin-top: 2rem;
 }
 
-/***** REGISTRATION PAGE *****/
+/***** INDEX HOME PAGE *****/
+#home_page h3 {
+  color: #B89207;
+  text-align: center;
+}
+
 /***** MEDIA QUERIES *****/
 @media (max-width: 585px) {
   .wizard {

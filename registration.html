@@ -9,13 +9,20 @@
     <div class="wrapper">
 
         <!-- Main Header -->
-        <header class="main-header">
+        <header class="main-header row-flex">
             <!-- Logo -->
-            <a href="/index.html" class="logo">
-                <img src="/Content/img/logos/CERTfuture.svg" alt="CERT logo">
+            <a href="../../index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">
+                    <img src="/Content/img/logos/certLogoSVG.svg" alt="CERT logo">
+                </span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">
+                    <img src="/Content/img/logos/certLogoSVG.svg" alt="CERT logo">
+                </span>
             </a>
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top col-flex" role="navigation">
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
@@ -23,31 +30,53 @@
                         <li class="dropdown user user-menu">
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <!-- The user image in the navbar-->
-                                <img src="/Content/img/user-arabic-160x160.jpg" class="user-image" alt="User Image">
-                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">Login</span>
+                                <span>Register</span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu vivify popIn">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
                                     <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
                                     <p>
-                                        Rodrigo de Mingo - Web Developer
-                                        <small>Member since Nov. 2012</small>
+                                        Register to VAT
+                                        <small>Please select your Registration option</small>
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                         <div class="btn-group" role="group">
-                                            <a class="btn btn-flat bg-light-blue" href="/login.html" role="button">Login</a>
+                                            <a class="btn bg-primary-dark btn-flat" href="/registration.html" role="button">Individual</a>
                                         </div>
                                         <div class="btn-group" role="group">
-                                            <a class="btn bg-purple btn-flat" href="/registration.html" role="button">Register</a>
+                                            <a class="btn bg-secondary btn-flate" href="/registration.html" role="button">Corporate</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                <span>Login</span>
+                            </a>
+                            <ul class="dropdown-menu vivify popIn">
+                                <!-- The user image in the menu -->
+                                <li class="user-header">
+                                    <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        Welcome to VAT
+                                        <small>Please select your option</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <a class="btn btn-flat bg-primary-dark" href="/login.html" role="button">Login</a>
                                         </div>
                                         <div class="btn-group" role="group">
-                                            <a class="btn bg-maroon btn-flate" href="/index.html" role="button">Sign out</a>
+                                            <a class="btn bg-secondary btn-flate" href="/index.html" role="button">Sign out</a>
                                         </div>
                                     </div>
                                 </li>
@@ -66,31 +95,31 @@
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="disabled">
                             <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Booking">
-                                                <span class="round-tab">
-                                                    <i class="fa fa-fw fa-calendar-o"></i>
-                                                </span>
-                                            </a>
+                                <span class="round-tab">
+                                    <i class="fa fa-fw fa-calendar-o"></i>
+                                </span>
+                            </a>
                         </li>
                         <li role="presentation" class="active">
                             <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Registration">
-                                                <span class="round-tab">
-                                                    <i class="fa fa-fw fa-edit"></i>
-                                                </span>
-                                            </a>
+                                <span class="round-tab">
+                                    <i class="fa fa-fw fa-edit"></i>
+                                </span>
+                            </a>
                         </li>
                         <li role="presentation" class="disabled">
                             <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Summary Review">
-                                                <span class="round-tab">
-                                                    <i class="fa fa-fw fa-file-text-o"></i>
-                                                </span>
-                                            </a>
+                                <span class="round-tab">
+                                    <i class="fa fa-fw fa-file-text-o"></i>
+                                </span>
+                            </a>
                         </li>
                         <li role="presentation" class="disabled">
                             <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Payment">
-                                                <span class="round-tab">
-                                                    <i class="fa fa-fw fa-credit-card"></i>
-                                                </span>
-                                            </a>
+                                <span class="round-tab">
+                                    <i class="fa fa-fw fa-credit-card"></i>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +131,8 @@
                     <h1 class="page-header">VAT Program Registration</h1>
                     <div class="bg-blue disabled countdown badge pull-right">
                         <h5>
-                            <i class="fa fa-fw fa-clock-o"></i>Session will expire in <strong>20:00 min</strong>
+                            <i class="fa fa-fw fa-clock-o"></i>Session will expire in
+                            <strong>20:00 min</strong>
                         </h5>
                     </div>
                     <div class="row">
@@ -111,7 +141,9 @@
                                 <div class="box-header">
                                     <h3 class="box-title text-light">Booking Information</h3>
                                     <div class="box-tools pull-right">
-                                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
                                     </div>
                                 </div>
                                 <form role="form">
@@ -186,7 +218,9 @@
                         <div class="box-header">
                             <h3 class="box-title">Personal Information</h3>
                             <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
                             </div>
                         </div>
                         <form role="form">
@@ -270,7 +304,9 @@
                         <div class="box-header">
                             <h3 class="box-title">Workshop Documentation</h3>
                             <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
                             </div>
                         </div>
                         <form role="form">
@@ -302,7 +338,9 @@
                         <div class="box-header">
                             <h3 class="box-title">Attach Scanned Documents Files</h3>
                             <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
                             </div>
                         </div>
                         <form role="form">

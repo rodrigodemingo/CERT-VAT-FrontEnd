@@ -8,54 +8,83 @@
 <body id="booking" class="hold-transition skin-blue sidebar-collapse layout-boxed">
     <div class="wrapper">
         <!-- Main Header -->
-        <header class="main-header">
-            <!-- Logo -->
-            <a href="/index.html" class="logo">
-                <img src="/Content/img/logos/CERTfuture.svg" alt="CERT logo">
-            </a>
-            <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation">
-                <!-- Navbar Right Menu -->
-                <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-                        <!-- User Account Menu -->
-                        <li class="dropdown user user-menu">
-                            <!-- Menu Toggle Button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <!-- The user image in the navbar-->
-                                <img src="/Content/img/user-arabic-160x160.jpg" class="user-image" alt="User Image">
-                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">Login</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- The user image in the menu -->
-                                <li class="user-header">
-                                    <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
-                                    <p>
-                                        Rodrigo de Mingo - Web Developer
-                                        <small>Member since Nov. 2012</small>
-                                    </p>
-                                </li>
-                                <!-- Menu Footer-->
-                                <li class="user-footer">
-                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                                        <div class="btn-group" role="group">
-                                            <a class="btn btn-flat bg-light-blue" href="/login.html" role="button">Login</a>
+        <header class="main-header row-flex">
+                <!-- Logo -->
+                <a href="../../index.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">
+                        <img src="/Content/img/logos/certLogoSVG.svg" alt="CERT logo">
+                    </span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg">
+                        <img src="/Content/img/logos/certLogoSVG.svg" alt="CERT logo">
+                    </span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top col-flex" role="navigation">
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account Menu -->
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span>Register</span>
+                                </a>
+                                <ul class="dropdown-menu vivify popIn">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header">
+                                        <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
+                                        <p>
+                                            Register to VAT
+                                            <small>Please select your Registration option</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                            <div class="btn-group" role="group">
+                                                <a class="btn bg-primary-dark btn-flat" href="/registration.html" role="button">Individual</a>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <a class="btn bg-secondary btn-flate" href="/registration.html" role="button">Corporate</a>
+                                            </div>
                                         </div>
-                                        <div class="btn-group" role="group">
-                                            <a class="btn bg-purple btn-flat" href="/registration.html" role="button">Register</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <!-- The user image in the navbar-->
+                                    <span>Login</span>
+                                </a>
+                                <ul class="dropdown-menu vivify popIn">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header">
+                                        <img src="/Content/img/user-arabic-160x160.jpg" class="img-circle" alt="User Image">
+                                        <p>
+                                            Welcome to VAT
+                                            <small>Please select your option</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                            <div class="btn-group" role="group">
+                                                <a class="btn btn-flat bg-primary-dark" href="/login.html" role="button">Login</a>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <a class="btn bg-secondary btn-flate" href="/index.html" role="button">Sign out</a>
+                                            </div>
                                         </div>
-                                        <div class="btn-group" role="group">
-                                            <a class="btn bg-maroon btn-flate" href="/index.html" role="button">Sign out</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <div class="colorgraph"></div>

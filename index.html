@@ -5,7 +5,7 @@
     <link rel="import" href="/head.html">
 </head>
 
-<body id="executive_workshop" class="hold-transition skin-blue sidebar-collapse layout-boxed">
+<body id="home_page" class="hold-transition skin-blue sidebar-collapse layout-boxed">
     <div class="wrapper">
         <!-- Main Header -->
         <header class="main-header row-flex">
@@ -89,45 +89,58 @@
         <div class="content-wrapper">
             <!-- Main content -->
             <section class="content container-fluid">
-                <div class="row">
-                <div class="col-md-12">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="item">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item">
                             <img src="http://placehold.it/1220x500/39CCCC/ffffff&amp;text=I+Love+My+Design" alt="First slide">
-        
+
                             <div class="carousel-caption">
-                              First Slide
+                                First Slide
                             </div>
-                          </div>
-                          <div class="item">
-                            <img src="http://placehold.it/1220x500/3c8dbc/ffffff&amp;text=I+Love+My+Design" alt="Second slide">
-        
-                            <div class="carousel-caption">
-                              Second Slide
-                            </div>
-                          </div>
-                          <div class="item active">
-                            <img src="http://placehold.it/1220x500/f39c12/ffffff&amp;text=I+Love+My+Design" alt="Third slide">
-        
-                            <div class="carousel-caption">
-                              Third Slide
-                            </div>
-                          </div>
                         </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                          <span class="fa fa-angle-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                          <span class="fa fa-angle-right"></span>
-                        </a>
-                      </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1220x500/f39c12/ffffff&amp;text=I+Love+My+Design" alt="Second slide">
+
+                            <div class="carousel-caption">
+                                Second Slide
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <img src="http://placehold.it/1220x500/3c8dbc/ffffff&amp;text=I+Love+My+Design" alt="Third slide">
+
+                            <div class="carousel-caption">
+                                Third Slide
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="fa fa-angle-lef    t"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="fa fa-angle-right"></span>
+                    </a>
                 </div>
+            </section>
+            <section class="content container-fluid">
+                <h3>::: VAT at CERT :::</h3>
+                <br>
+                <h4>VAT in the UAE</h4>
+                <p>Federal Decree-Law No.8 of 2017 on Value Added Tax has been issued by the UAE Government, making 1st January
+                    2018 the effective date of VAT implementation. All businesses with revenue exceeding the yearly mandatory
+                    threshold for value added tax are required to register for VAT and be in compliance with the law. The
+                    Centre of Excellence for Applied Research and Training (CERT) is committed to supporting the needs of
+                    the nation and the public and private sector through a portfolio of VAT training programs. Our customized
+                    programs in VAT implementation are designed for the specific needs of the different business functions,
+                    from Accounting and Finances to Operations, Logistics and Information Systems.</p>
+
+                <h3>::: Course :::</h3>
+                <h3>::: Contact Us :::</h3>
+                <div id="mapid">
                 </div>
             </section>
         </div>
@@ -155,6 +168,42 @@
         </footer>
     </div>
     <!-- ./wrapper -->
+
+
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- Leaflet Maps JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js" integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
+        crossorigin=""></script>
+    <!-- Leaflet MAP Location: Abu Dhabi - CERT -->
+    <script>
+        // Default Map Loading
+        $(document).ready(function () {
+            ReloadMap(24.45491, 54.3962, "Centre of Excellence for Applied Research and Training", 11);
+        });
+        // Inititation Variables
+        var mymap;
+        var marker;
+        // Location
+        mymap = L.map('mapid');
+
+        function ReloadMap(lat, lng, title, zoomlevel) {
+            mymap.setView([lat, lng], zoomlevel);
+            // Marker Icon 
+            marker = L.marker([lat, lng]).addTo(mymap);
+            // PopUp Text
+            marker.bindPopup(title).openPopup();
+            // load map tiles and add to map
+            L.tileLayer(
+                'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                    id: 'mapbox.streets'
+                }).addTo(mymap);
+        }
+    </script>
 </body>
 
 </html>
