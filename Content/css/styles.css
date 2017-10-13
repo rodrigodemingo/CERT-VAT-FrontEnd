@@ -10,8 +10,9 @@
   color: #fff;
 }
 
+.btn-secondary,
 .bg-secondary {
-  background: #8E292E;
+  background: #B89207;
   color: #fff;
 }
 
@@ -36,6 +37,10 @@ h6,
 .h5,
 .h6 {
   font-family: 'Muli', sans-serif;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
 }
 
 /***** LOGO HEADER *****/

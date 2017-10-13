@@ -15,8 +15,9 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
   color: #fff;
 }
 
+.btn-secondary,
 .bg-secondary {
-  background: map-get($colors, secondary);
+  background: map-get($colors, text-highlight);
   color: #fff;
 }
 
@@ -43,6 +44,10 @@ h6,
 .h5,
 .h6 {
   font-family: 'Muli', sans-serif;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
 }
 
 
