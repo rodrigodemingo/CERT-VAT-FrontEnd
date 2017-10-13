@@ -15,13 +15,27 @@
   color: #fff;
 }
 
-.btn.focus, .btn:focus, .btn:hover {
+.btn.focus,
+.btn:focus,
+.btn:hover {
   color: #fff;
 }
 
 /***** GLOBAL STYLES *****/
-body {
-  font-size: 16px;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Muli', sans-serif;
 }
 
 .border-right {
@@ -456,7 +470,6 @@ body {
 #executive_workshop .widget-user .widget-user-username {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-weight: bold;
 }
 
 #executive_workshop .widget-user .widget-user-desc {

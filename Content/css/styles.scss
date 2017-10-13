@@ -9,22 +9,40 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
   background: map-get($colors, primary);
   color: #fff;
 }
+
 .bg-primary-dark {
   background: map-get($colors, primary-dark);
   color: #fff;
 }
+
 .bg-secondary {
   background: map-get($colors, secondary);
   color: #fff;
 }
-.btn.focus, .btn:focus, .btn:hover {
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
   color: #fff;
 }
 
+
 /***** GLOBAL STYLES *****/
 
-body {
-  font-size: 16px;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Muli', sans-serif;
 }
 
 .border-right {
@@ -460,7 +478,6 @@ body {
   .widget-user .widget-user-username {
     margin-top: 30px;
     margin-bottom: 30px;
-    font-weight: bold;
   }
   .widget-user .widget-user-desc {
     font-size: 16px;
@@ -482,7 +499,7 @@ body {
     border: 1px solid #fff;
     color: #fff;
   }
-  .box > .box-footer > .description-block a.btn-secondary:hover {
+  .box>.box-footer>.description-block a.btn-secondary:hover {
     color: map-get($colors, secondary);
     background: map-get($colors, light);
   }
