@@ -2,7 +2,48 @@
 <html lang="en">
 
 <head>
-    <link rel="import" href="head.html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VAT | Program</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="Content/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Content/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins -->
+    <link rel="stylesheet" href="Content/css/skins/skin-blue-light.min.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="Content/css/fonts_googleapis.css">
+    <!-- Animated CSS Styles -->
+    <link rel="stylesheet" href="Content/css/vivify.min.css">
+    <!-- Muli Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+    <!-- Rodrigo Styles -->
+    <link rel="stylesheet" href="Content/css/styles.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+                    <script src="Content/js/ie9/html5shiv.min.js"></script>
+                    <script src="Content/js/ie9/respond.min.js"></script>
+                <![endif]-->
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 3 -->
+    <script src="Content/js/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="Content/js/bootstrap.min.js"></script>
+    <!-- Chart.js -->
+    <script src="Content/js/Chart.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Content/js/adminlte.min.js"></script>
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw=="
+        crossorigin="" />
 </head>
 
 <body id="home_page" class="hold-transition skin-blue sidebar-collapse layout-boxed">
@@ -88,7 +129,7 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Main content -->
-            <section class="content container-fluid">
+            <section>
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
@@ -97,21 +138,21 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item">
-                            <img src="http://placehold.it/1220x500/39CCCC/ffffff&amp;text=I+Love+My+Design" alt="First slide">
+                            <img src="http://placehold.it/1220x500/39CCCC/ffffff&amp;text=Place+Picture+Here" alt="First slide">
 
                             <div class="carousel-caption">
                                 First Slide
                             </div>
                         </div>
                         <div class="item">
-                            <img src="http://placehold.it/1220x500/f39c12/ffffff&amp;text=I+Love+My+Design" alt="Second slide">
+                            <img src="http://placehold.it/1220x500/f39c12/ffffff&amp;text=Place+Picture+Here" alt="Second slide">
 
                             <div class="carousel-caption">
                                 Second Slide
                             </div>
                         </div>
                         <div class="item active">
-                            <img src="http://placehold.it/1220x500/3c8dbc/ffffff&amp;text=I+Love+My+Design" alt="Third slide">
+                            <img src="http://placehold.it/1220x500/3c8dbc/ffffff&amp;text=Place+Picture+Here" alt="Third slide">
 
                             <div class="carousel-caption">
                                 Third Slide
@@ -119,7 +160,7 @@
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="fa fa-angle-lef    t"></span>
+                        <span class="fa fa-angle-left"></span>
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                         <span class="fa fa-angle-right"></span>
@@ -143,25 +184,23 @@
                             Logistics and Information Systems.</p>
                     </div>
                 </div>
-
                 <h3>::: Course :::</h3>
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
                         <div class="box-body">
                             <img class="img-responsive pad" src="http://placehold.it/1220x700/B89207/ffffff&amp;text=Picture+Here" alt="Photo">
-                            <div class="box-body">
+                            <div class="box-body m-b-md">
                                 <dl>
                                     <dt>Executive Workshop on UAE VAT Implementation</dt>
                                     <dd>Saturdays 8:00 am - 4:45 pm</dd>
                                 </dl>
-
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <h4>Executive Workshop on UAE VAT Implementation</h4>
-                        <p>This 6-hr workshop examines the Value Added Tax (VAT) framework in the UAE, with emphasis in the
+                        <h4 class="m-b-md">Executive Workshop on UAE VAT Implementation</h4>
+                        <p class="m-b-md">This 6-hr workshop examines the Value Added Tax (VAT) framework in the UAE, with emphasis in the
                             procedures, provisions and controls that management must have in place to ensure compliance with
                             the VAT laws. Using an interactive methodology, participants will acquire the knowledge and tools
                             to effectively manage the implementation of VAT in their organizations.</p>
@@ -237,7 +276,8 @@
     <!-- REQUIRED JS SCRIPTS -->
     <!-- Leaflet Maps JavaScript -->
     <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js" integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
-        crossorigin=""></script>
+        crossorigin="">
+    </script>
     <!-- Leaflet MAP Location: Abu Dhabi - CERT -->
     <script>
         // Default Map Loading
