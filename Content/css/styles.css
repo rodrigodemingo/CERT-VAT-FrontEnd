@@ -24,6 +24,13 @@
 }
 
 
+/* LOGIN NAV BAR */
+
+nav {
+  display: none;
+}
+
+
 /***** GLOBAL STYLES *****/
 
 body,
