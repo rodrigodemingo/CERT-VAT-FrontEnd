@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,9 @@
     <!-- Animated CSS Styles -->
     <link rel="stylesheet" href="Content/css/vivify.min.css">
     <!-- Muli Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="Content/plugins/slick/slick.css">
     <!-- Rodrigo Styles -->
     <link rel="stylesheet" href="Content/css/styles.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,8 +38,6 @@
     <script src="Content/js/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="Content/js/bootstrap.min.js"></script>
-    <!-- Chart.js -->
-    <script src="Content/js/Chart.js"></script>
     <!-- AdminLTE App -->
     <script src="Content/js/adminlte.min.js"></script>
 
@@ -126,47 +126,23 @@
                 </div>
             </nav>
         </header>
+        <!-- Slick Slider -->
+        <div class="slider-home">
+            <div>
+                <img src="Content/img/166947641.jpg">
+            </div>
+            <div>
+                <img src="Content/img/610437698.jpg">
+            </div>
+            <div>
+                <img src="Content/img/595070354.jpg">
+            </div>
+        </div>
+        <!-- /SlickSlider -->
+
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Main content -->
-            <section>
-                <div id="carousel-home" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-home" data-slide-to="1" class=""></li>
-                        <li data-target="#carousel-home" data-slide-to="2" class=""></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item">
-                            <img src="Content/img/166947641.jpg" alt="First slide">
-
-                            <div class="carousel-caption">
-                                First Slide
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="Content/img/610437698.jpg" alt="Second slide">
-
-                            <div class="carousel-caption">
-                                Second Slide
-                            </div>
-                        </div>
-                        <div class="item active">
-                            <img src="Content/img/595070354.jpg" alt="Third slide">
-
-                            <div class="carousel-caption">
-                                Third Slide
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#carousel-home" data-slide="prev">
-                        <span class="fa fa-angle-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-home" data-slide="next">
-                        <span class="fa fa-angle-right"></span>
-                    </a>
-                </div>
-            </section>
             <section class="content container-fluid">
                 <h3>::: VAT at CERT :::</h3>
                 <div class="row">
@@ -307,6 +283,20 @@
                 }).addTo(mymap);
         }
     </script>
+
+
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="Content/plugins/slick/slick.min.js"></script>
+    
+        <script>
+            $(document).ready(function () {
+                $('.slider-home').slick({
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
 </body>
 
 </html>
