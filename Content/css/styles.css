@@ -754,4 +754,10 @@ span.round-tab:hover {
   #home_page h3 {
     margin: 20px 0;
   }
+  #executive_workshop .box-image {
+    display: none;
+  }
+  #executive_workshop .box {
+    margin-bottom: 0;
+  }
 }
