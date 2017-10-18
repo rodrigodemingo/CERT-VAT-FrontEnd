@@ -33,6 +33,10 @@ nav {
 
 /***** GLOBAL STYLES *****/
 
+.layout-boxed .wrapper {
+  box-shadow: none;
+}
+
 body,
 h1,
 h2,
