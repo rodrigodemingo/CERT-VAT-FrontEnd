@@ -28,7 +28,20 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
 }
 
 
+/* LOGIN NAV BAR */
+
+.main-header .navbar-brand {
+  color: map-get($colors, primary);
+  margin: 30px 17px;
+  font-size: 3rem;
+}
+
+
 /***** GLOBAL STYLES *****/
+
+.layout-boxed .wrapper {
+  box-shadow: none;
+}
 
 body,
 h1,
@@ -58,14 +71,11 @@ p {
 
 /***** LOGO HEADER *****/
 
-.main-header {
-  max-height: 130px;
-}
-
 .main-header .logo {
-  height: 80px;
+  height: 100px;
   width: 350px;
-  margin: 2rem 0 1rem;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
@@ -700,7 +710,14 @@ span.round-tab:hover {
     color: map-get($colors, primary);
     text-align: center;
     margin: 50px 0;
+  }
+  h4 {
     font-weight: bold;
+  }
+  .nav>li>a:hover,
+  .nav>li>a:active,
+  .nav>li>a:focus {
+    background: none;
   }
 }
 
@@ -722,6 +739,17 @@ span.round-tab:hover {
     width: 50px;
     height: 50px;
     line-height: 50px;
+  }
+  .main-header .logo {
+    width: 300px;
+  }
+  #home_page {
+    h1,
+    .navbar-custom-menu .navbar-nav>li>a {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 }
 
