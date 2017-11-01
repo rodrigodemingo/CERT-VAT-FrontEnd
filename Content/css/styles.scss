@@ -697,9 +697,10 @@ span.round-tab:hover {
 
 #home_page {
   h3 {
-    color: map-get($colors, text-highlight);
+    color: map-get($colors, primary);
     text-align: center;
     margin: 50px 0;
+    font-weight: bold;
   }
 }
 

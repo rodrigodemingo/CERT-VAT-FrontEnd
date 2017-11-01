@@ -1,5 +1,4 @@
 /* CSS Added by Rodrigo de Mingo */
-
 .bg-primary,
 .btn-primary {
   background: #233140;
@@ -23,20 +22,7 @@
   color: #fff;
 }
 
-
-/* LOGIN NAV BAR */
-
-nav {
-  display: none;
-}
-
-
 /***** GLOBAL STYLES *****/
-
-.layout-boxed .wrapper {
-  box-shadow: none;
-}
-
 body,
 h1,
 h2,
@@ -62,9 +48,7 @@ p {
   text-align: justify;
 }
 
-
 /***** LOGO HEADER *****/
-
 .main-header {
   max-height: 130px;
 }
@@ -75,7 +59,7 @@ p {
   margin: 2rem 0 1rem;
 }
 
-.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
   color: #000;
 }
 
@@ -109,10 +93,6 @@ p {
   margin-left: 0;
 }
 
-.main-footer p {
-  line-height: 20px;
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -125,9 +105,7 @@ p {
   flex: 1 !important;
 }
 
-
 /* MARGINS & PADDINGS */
-
 .p-0 {
   padding: 0;
 }
@@ -476,10 +454,8 @@ p {
   margin-bottom: -40px;
 }
 
-
 /***** EXECUTIVE WORKSHOP *****/
-
-#executive_workshop .navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+#executive_workshop .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
   color: #48484A;
 }
 
@@ -491,12 +467,12 @@ p {
   font-weight: 600;
 }
 
-#executive_workshop .table>tbody>tr>td,
-#executive_workshop .table>tbody>tr>th,
-#executive_workshop .table>tfoot>tr>td,
-#executive_workshop .table>tfoot>tr>th,
-#executive_workshop .table>thead>tr>td,
-#executive_workshop .table>thead>tr>th {
+#executive_workshop .table > tbody > tr > td,
+#executive_workshop .table > tbody > tr > th,
+#executive_workshop .table > tfoot > tr > td,
+#executive_workshop .table > tfoot > tr > th,
+#executive_workshop .table > thead > tr > td,
+#executive_workshop .table > thead > tr > th {
   vertical-align: middle;
 }
 
@@ -519,11 +495,11 @@ p {
   height: 4rem;
 }
 
-#executive_workshop .description-block>.description-header {
+#executive_workshop .description-block > .description-header {
   font-size: 2.1rem;
 }
 
-#executive_workshop .description-block>.description-text {
+#executive_workshop .description-block > .description-text {
   font-size: 1.3rem;
 }
 
@@ -537,14 +513,12 @@ p {
   color: #fff;
 }
 
-#executive_workshop .box>.box-footer>.description-block a.btn-secondary:hover {
+#executive_workshop .box > .box-footer > .description-block a.btn-secondary:hover {
   color: #8E292E;
   background: #fff;
 }
 
-
 /* LOGIN PAGE */
-
 .colorgraph {
   height: 5px;
   border-top: 0;
@@ -557,12 +531,8 @@ p {
   background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
-
 /***** BOOKING PAGE *****/
-
-
 /* Leaflet Map */
-
 .leaflet-container a.leaflet-popup-close-button {
   display: none;
 }
@@ -571,9 +541,7 @@ p {
   height: 196px;
 }
 
-
 /* Wizard */
-
 .wizard {
   background: transparent;
   position: relative;
@@ -587,7 +555,7 @@ p {
   border: none;
 }
 
-.wizard>div.wizard-inner {
+.wizard > div.wizard-inner {
   position: relative;
 }
 
@@ -603,9 +571,9 @@ p {
   z-index: 1;
 }
 
-.wizard .nav-tabs>li.active>a,
-.wizard .nav-tabs>li.active>a:hover,
-.wizard .nav-tabs>li.active>a:focus {
+.wizard .nav-tabs > li.active > a,
+.wizard .nav-tabs > li.active > a:hover,
+.wizard .nav-tabs > li.active > a:focus {
   color: #555555;
   cursor: default;
   border: 0;
@@ -645,10 +613,9 @@ span.round-tab:hover {
   border: 2px solid #333;
 }
 
-.wizard .nav-tabs>li {
+.wizard .nav-tabs > li {
   width: 25%;
 }
-
 
 /* .wizard li:after {
     content: " ";
@@ -672,8 +639,7 @@ span.round-tab:hover {
     border: 10px solid transparent;
     border-bottom-color: #5bc0de;
 } */
-
-.wizard .nav-tabs>li a {
+.wizard .nav-tabs > li a {
   width: 70px;
   height: 70px;
   margin: 20px auto;
@@ -681,7 +647,7 @@ span.round-tab:hover {
   padding: 0;
 }
 
-.wizard .nav-tabs>li a:hover {
+.wizard .nav-tabs > li a:hover {
   background: transparent;
 }
 
@@ -694,9 +660,7 @@ span.round-tab:hover {
   margin-top: 0;
 }
 
-
 /***** CORPORATE REGISTRATION PAGE *****/
-
 #corporate_registration_1 .fa-avatar-circle {
   border-radius: 50%;
   border: 1px solid #ccc;
@@ -709,18 +673,15 @@ span.round-tab:hover {
   margin-top: 2rem;
 }
 
-
 /***** INDEX HOME PAGE *****/
-
 #home_page h3 {
-  color: #B89207;
+  color: #233140;
   text-align: center;
   margin: 50px 0;
+  font-weight: bold;
 }
 
-
 /***** MEDIA QUERIES *****/
-
 @media (max-width: 585px) {
   .wizard {
     width: 90%;
@@ -732,7 +693,7 @@ span.round-tab:hover {
     height: 50px;
     line-height: 50px;
   }
-  .wizard .nav-tabs>li a {
+  .wizard .nav-tabs > li a {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -748,24 +709,9 @@ span.round-tab:hover {
 
 @media (max-width: 991px) {
   #executive_workshop .widget-user .widget-user-header {
-    height: auto;
+    height: 20rem;
   }
-  .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+  .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
     top: 50%;
-  }
-  .main-header .navbar {
-    display: none;
-  }
-  .main-header .logo {
-    margin: 0 auto;
-  }
-  #home_page h3 {
-    margin: 20px 0;
-  }
-  #executive_workshop .box-image {
-    display: none;
-  }
-  #executive_workshop .box {
-    margin-bottom: 0;
   }
 }
