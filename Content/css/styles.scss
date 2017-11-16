@@ -39,6 +39,10 @@ secondary-dark: #ca195a, secondary-light: #dd6a94, text-primary: #48484A, text-s
 
 /***** GLOBAL STYLES *****/
 
+.content {
+  min-height: 120px;
+}
+
 .layout-boxed .wrapper {
   box-shadow: none;
 }
@@ -123,6 +127,10 @@ p {
 
 .col-flex {
   flex: 1 !important;
+}
+
+.border-bottom {
+  border-bottom: 5px;
 }
 
 
@@ -485,9 +493,7 @@ p {
   }
   .widget-user .box-footer {
     padding: 2.43rem 2.4rem;
-  } // .quick-links {
-  //   margin: 30px;
-  // }
+  }
   .program-information h4 {
     font-weight: 600;
   }
@@ -510,9 +516,6 @@ p {
   }
   .widget-user .widget-user-desc {
     font-size: 16px;
-  }
-  .description-block {
-    height: 4rem;
   }
   .description-block>.description-header {
     font-size: 2.1rem;
@@ -702,6 +705,10 @@ span.round-tab:hover {
   }
 }
 
+.navbar-header2 {
+  float: right;
+}
+
 
 /***** INDEX HOME PAGE *****/
 
@@ -758,6 +765,15 @@ span.round-tab:hover {
     border-right: none;
     border-bottom: 1px solid #f4f4f4;
   }
+  #executive_workshop .widget-user .widget-user-header {
+    margin-top: 10rem;
+  }
+  .content {
+    min-height: 250px;
+  }
+  .navbar-header2 {
+    float: none;
+  }
 }
 
 @media (max-width:991px) {
@@ -766,9 +782,6 @@ span.round-tab:hover {
   }
   #executive_workshop .widget-user {
     margin: 0;
-  }
-  #executive_workshop .navbar-custom-menu {
-    display: none;
   }
   .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
     top: 50%;
