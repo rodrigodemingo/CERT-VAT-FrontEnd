@@ -734,6 +734,12 @@ span.round-tab:hover {
   }
 }
 
+@media (max-width: 380px) {
+  #executive_workshop .widget-user .widget-user-header {
+    min-height: 45rem;
+  }
+}
+
 @media (max-width: 767px) {
   .box .border-right {
     border-right: none;
