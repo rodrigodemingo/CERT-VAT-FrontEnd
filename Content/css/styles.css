@@ -735,7 +735,13 @@ span.round-tab:hover {
 
 @media (max-width: 991px) {
   #executive_workshop .widget-user .widget-user-header {
-    height: 20rem;
+    height: 25rem;
+  }
+  #executive_workshop .widget-user {
+    margin: 0;
+  }
+  #executive_workshop .navbar-custom-menu {
+    display: none;
   }
   .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
     top: 50%;
